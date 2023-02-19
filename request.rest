@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/1
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "nama": "John Doe",
+    "judul": "Aplikasi POS",
+    "deskripsi": "Membuat Aplikasi POS dengan NodeJS"
+}
+
+###
+PATCH http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+    "nama": "M Iqbal",
+    "judul": "Aplikasi Management tugas",
+    "deskripsi": "Membuat Aplikasi Management dengan NodeJS"
+}
+
+###
+DELETE http://localhost:5000/users/2
